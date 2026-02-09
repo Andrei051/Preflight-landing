@@ -5,6 +5,7 @@ import ProductLoop from "@/components/ProductLoop";
 import IntegrationModel from "@/components/IntegrationModel";
 import WhoItsFor from "@/components/WhoItsFor";
 import FinalCTA from "@/components/FinalCTA";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <IntegrationModel />
       <WhoItsFor />
       <FinalCTA />
+      <Footer />
     </main>
   );
 }
