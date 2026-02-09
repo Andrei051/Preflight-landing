@@ -54,6 +54,11 @@ vercel
 
 Connect your repository to Cloudflare Pages and it will automatically build and deploy.
 
+### Cloudflare (if using Cloudflare in front of the site)
+
+- **Email Address Obfuscation:** Turn this **off** for preflightpayments.com. The landing page uses clear `mailto:` links (demo, simulator, early-access); obfuscation fills the HTML with `/_cdn-cgi/l/email-protection#...` and can make the source look noisy. Deliverability and clarity are preferred here; you can add a contact form later if needed.
+- In Cloudflare Dashboard: **Scrape Shield** → **Email Address Obfuscation** → **Off** for this zone.
+
 ## Customization
 
 Update the following to customize:
