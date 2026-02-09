@@ -12,6 +12,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  verification: {
+    other: {
+      "msvalidate.01": "E120944C37CE2BAD961E00AB2343BA0E",
+    },
+  },
 };
 
 export default function RootLayout({
