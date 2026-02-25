@@ -25,11 +25,15 @@ Open [http://localhost:3000](http://localhost:3000) (or [http://localhost:3001](
 
 ### EPERM on `.next\trace` (Windows)
 
-The page can still load. To reduce or avoid the error:
+The error is usually Windows file-lock/permission interference (AV, indexing, OneDrive sync, or a stuck Node process). The page can still load. To reduce or avoid it:
 
-- Run only one dev server for this project at a time.
-- Add the project folder to Windows Defender exclusions: **Windows Security → Virus & threat protection → Manage settings → Exclusions**.
-- Or enable **Windows Developer Mode** (Settings → Privacy & security → For developers).
+- **Close** any running Next dev servers and Node processes before building.
+- **Delete `.next/` manually** (File Explorer) if the clean script can’t remove it.
+- **Avoid OneDrive-synced directories** for the repo; use a local folder (e.g. `C:\dev\Preflight-landing`).
+- **Add exclusions** for the repo folder in Windows Defender / AV and any file-indexing tool.
+- **If it persists**, run `npm run build` from WSL; that often eliminates the issue.
+
+You can also: run only one dev server at a time; add the project folder to Windows Defender exclusions (**Windows Security → Virus & threat protection → Manage settings → Exclusions**); or enable **Windows Developer Mode** (Settings → Privacy & security → For developers).
 
 ### "Cannot find module './vendor-chunks/next.js'" or clean fails with EPERM
 
@@ -58,6 +62,14 @@ Connect your repository to Cloudflare Pages and it will automatically build and 
 
 - **Email Address Obfuscation:** Turn this **off** for preflightpayments.com. The landing page uses clear `mailto:` links (demo, simulator, early-access); obfuscation fills the HTML with `/_cdn-cgi/l/email-protection#...` and can make the source look noisy. Deliverability and clarity are preferred here; you can add a contact form later if needed.
 - In Cloudflare Dashboard: **Scrape Shield** → **Email Address Obfuscation** → **Off** for this zone.
+
+## SEO & measurement
+
+- **Sitemap:** `/sitemap.xml` is generated automatically; all reference pages are included.
+- **robots.txt:** Allows all crawlers and references the sitemap (see `app/robots.ts`).
+- **Google Search Console (GSC):** Over 2–3 weeks, expect “Discovered – currently not indexed” to trend down as pages get indexed. Early queries may include: r01, r02, pacs.002, acsp, acsc, swift nack. If pages are indexed but get zero impressions, consider tightening titles/descriptions to match query language.
+
+**Local SEO checks (before deploy):** After `npm run build && npm run start`, run `npm run seo-check` in another terminal. Use `BASE_URL=https://preflightpayments.com npm run seo-check` to check production. Validates sitemap, robots.txt, canonicals, meta, JSON-LD, and that all sitemap URLs return 200.
 
 ## Customization
 

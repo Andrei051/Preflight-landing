@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://preflightpayments.com"),
@@ -15,6 +16,13 @@ export const metadata: Metadata = {
     other: {
       "msvalidate.01": "E120944C37CE2BAD961E00AB2343BA0E",
     },
+  },
+  openGraph: {
+    siteName: "Preflight",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
   },
 };
 
@@ -51,6 +59,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <SiteHeader />
         {children}
       </body>
     </html>

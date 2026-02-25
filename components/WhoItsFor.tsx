@@ -12,7 +12,7 @@ export default function WhoItsFor() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-            Who it's for
+            Who it&apos;s for
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Typically owned by Payments or Platform teams, used daily by Ops and Investigations.

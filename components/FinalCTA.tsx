@@ -9,7 +9,7 @@ export default function FinalCTA() {
           See how Preflight can transform your payment operations
         </p>
         <p className="text-sm text-blue-200 mb-10">
-          Designed by teams who've run payment ops and investigations at scale.
+          Designed by teams who&apos;ve run payment ops and investigations at scale.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center flex-wrap">
@@ -50,7 +50,7 @@ export default function FinalCTA() {
           </p>
           
           <div className="bg-white/10 rounded-lg p-6 mt-6">
-            <h3 className="text-xl font-semibold text-white mb-4">What you'll see in the demo</h3>
+            <h3 className="text-xl font-semibold text-white mb-4">What you&apos;ll see in the demo</h3>
             <div className="grid md:grid-cols-3 gap-4 text-left">
               <div className="flex items-start gap-3">
                 <span className="text-2xl">🧪</span>

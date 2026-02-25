@@ -28,7 +28,7 @@ export default function Solution() {
   ];
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="pre-execution-simulation" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
@@ -60,6 +60,17 @@ export default function Solution() {
             </div>
             <p className="text-gray-700 font-medium">
               🔒 No SWIFT SAA access required — integrate via your payments middleware / gateway / orchestration layer.
+            </p>
+            <p className="mt-4 text-sm text-gray-600">
+              <a href="/reference" className="text-blue-600 hover:text-blue-800 hover:underline">
+                See the operator reference →
+              </a>
+              <span className="mx-2">·</span>
+              <a href="/sepa/r01-insufficient-funds" className="text-blue-600 hover:text-blue-800 hover:underline">SEPA rejects (R01, R02)</a>
+              <span className="mx-2">·</span>
+              <a href="/swift/nack-format-error" className="text-blue-600 hover:text-blue-800 hover:underline">SWIFT NACK and routing</a>
+              <span className="mx-2">·</span>
+              <a href="/iso20022/pacs002-status-codes" className="text-blue-600 hover:text-blue-800 hover:underline">pacs.002 status flows</a>
             </p>
           </div>
         </div>

@@ -29,7 +29,7 @@ export default function IntegrationModel() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-gray-50 rounded-xl p-8 mb-6">
             <p className="text-gray-800 mb-6 leading-relaxed">
-              🔌 We connect to payment middleware / ISO pipelines to ingest outcomes and statuses. Preflight doesn't execute payments.
+              🔌 We connect to payment middleware / ISO pipelines to ingest outcomes and statuses. Preflight doesn&apos;t execute payments.
             </p>
             <p className="text-gray-700 mb-6 leading-relaxed">
               Integration is event-based (webhooks or batch ingestion) and does not sit on the critical execution path unless you choose it to.
