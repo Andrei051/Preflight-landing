@@ -9,9 +9,6 @@ export const metadata: Metadata = {
   icons: {
     icon: "/icon.svg",
   },
-  alternates: {
-    canonical: "https://preflightpayments.com/",
-  },
   verification: {
     other: {
       "msvalidate.01": "E120944C37CE2BAD961E00AB2343BA0E",
