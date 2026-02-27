@@ -12,33 +12,18 @@ export default function FinalCTA() {
           Designed by teams who&apos;ve run payment ops and investigations at scale.
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center flex-wrap">
-          <div className="flex flex-col items-center">
-            <a
-              href="mailto:demo@preflightpayments.com?subject=Preflight Demo Request - 15 Minutes&body=Hi,%0D%0A%0D%0AI'd like to schedule a 15-minute demo of Preflight.%0D%0A%0D%0APlease let me know your availability.%0D%0A%0D%0AThanks!"
-              className="px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold text-lg hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center gap-2"
-            >
-              <span>📅</span>
-              <span>Book a 15-min demo</span>
-            </a>
-            <p className="text-xs text-blue-200 mt-2">
-              Prefer email? demo@preflightpayments.com
-            </p>
-          </div>
+        <div className="flex flex-col items-center">
           <a
-            href="mailto:simulator@preflightpayments.com?subject=Simulator%20Access%20Request&body=Hi,%0D%0A%0D%0AI'd%20like%20to%20explore%20the%20Preflight%20simulator.%0D%0A%0D%0ACompany:%0D%0ARole:%0D%0APayment%20rails%20of%20interest:%0D%0AWhat%20I'm%20trying%20to%20validate:%0D%0A%0D%0AThanks"
-            className="px-8 py-4 bg-transparent text-white border-2 border-white rounded-lg font-semibold text-lg hover:bg-white/10 transition-all transform hover:scale-105 flex items-center gap-2"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdaObTJLdmOyLTBI0ePwCreO718PMdm3N9abM4Z6xclhoVaMg/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold text-lg hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center gap-2"
           >
-            <span>🧪</span>
-            <span>Request simulator access</span>
+            <span>Request Access</span>
           </a>
-          <a
-            href="mailto:early-access@preflightpayments.com?subject=Early Access Request - Preflight&body=Hi,%0D%0A%0D%0AI'm interested in early access to Preflight.%0D%0A%0D%0ACompany: [Your Company]%0D%0ARole: [Your Role]%0D%0AUse case: [Brief description]%0D%0A%0D%0AThanks!"
-            className="px-8 py-4 bg-transparent text-white border-2 border-white rounded-lg font-semibold text-lg hover:bg-white/10 transition-all transform hover:scale-105 flex items-center gap-2"
-          >
-            <span>🚀</span>
-            <span>Get early access</span>
-          </a>
+          <p className="text-xs text-blue-200 mt-2">
+            Prefer direct contact? demo@preflightpayments.com
+          </p>
         </div>
         <p className="text-xs text-blue-200 mt-4 max-w-2xl mx-auto">
           Demo includes live Swagger UI, deterministic test data, and full case management walkthrough. Early access includes priority onboarding and direct product feedback channel.

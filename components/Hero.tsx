@@ -26,16 +26,12 @@ export default function Hero() {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
-              href="#request-demo"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdaObTJLdmOyLTBI0ePwCreO718PMdm3N9abM4Z6xclhoVaMg/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-4 bg-blue-600 text-white rounded-lg font-semibold text-lg hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
             >
-              Book a 15-min demo
-            </a>
-            <a
-              href="mailto:simulator@preflightpayments.com?subject=Simulator%20Access%20Request&body=Hi,%0D%0A%0D%0AI'd%20like%20to%20explore%20the%20Preflight%20simulator.%0D%0A%0D%0ACompany:%0D%0ARole:%0D%0APayment%20rails%20of%20interest:%0D%0AWhat%20I'm%20trying%20to%20validate:%0D%0A%0D%0AThanks"
-              className="px-8 py-4 bg-white text-blue-600 border-2 border-blue-600 rounded-lg font-semibold text-lg hover:bg-blue-50 transition-colors"
-            >
-              Request simulator access
+              Request Access
             </a>
           </div>
           
