@@ -18,7 +18,7 @@ export default function SiteHeader() {
             href="/reference"
             className="text-sm text-gray-600 hover:text-blue-600 transition-colors"
           >
-            Reference
+            Docs
           </Link>
         </nav>
       </div>

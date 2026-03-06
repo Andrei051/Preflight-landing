@@ -78,7 +78,7 @@ export default function ApiReferencePage() {
         <div className="max-w-3xl">
           <h2 className="text-lg font-semibold text-gray-900 mb-2">Interactive execution</h2>
           <p className="text-gray-700 mb-3">
-            Public API reference is available below.
+            Public API reference available below.
           </p>
           <p className="text-gray-700 mb-2">To run requests:</p>
           <ul className="list-disc pl-6 space-y-1 text-gray-700 text-sm mb-3">
@@ -182,7 +182,12 @@ export default function ApiReferencePage() {
               <div>
                 <p className="font-semibold text-gray-900">Network reject arrives</p>
                 <p className="text-sm text-gray-600 mb-3"><code>status = REJECTED</code></p>
-                <p className="text-sm text-gray-700">Preflight automatically: opens investigation case, links outcome to payment trace, attaches evidence.</p>
+                <p className="text-sm text-gray-700 mb-2">Preflight automatically:</p>
+                <ul className="list-disc pl-6 space-y-1 text-sm text-gray-700">
+                  <li>opens investigation case</li>
+                  <li>links outcome to payment trace</li>
+                  <li>attaches evidence</li>
+                </ul>
               </div>
             </li>
             <li className="flex gap-4">

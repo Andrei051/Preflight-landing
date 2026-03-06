@@ -11,9 +11,9 @@ export default function Hero() {
           </h1>
           
           <p className="text-xl sm:text-2xl text-gray-600 mb-4 leading-relaxed">
-            Reduce SWIFT & SEPA payment rejects — before and after execution.
+            Reduce SWIFT & SEPA payment rejects.
             <br />
-            Predict risk upfront. Investigate failures with full evidence.
+            Predict risk before execution. Investigate failures with full evidence.
           </p>
           
           <p className="text-lg text-gray-500 mb-10">
@@ -42,7 +42,7 @@ export default function Hero() {
           </div>
           
           <p className="text-sm text-gray-500 mt-4">
-            Explore the API directly or request demo access.
+            Explore the API or request demo access.
           </p>
           <p className="text-sm text-gray-500 mt-1">
             ✅ No production access required for demo

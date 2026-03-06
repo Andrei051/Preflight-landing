@@ -9,7 +9,7 @@ export default function Footer() {
         </a>
         <span className="hidden sm:inline" aria-hidden>·</span>
         <a href="/reference" className="text-gray-600 hover:text-blue-600 transition-colors">
-          Reference
+          Docs
         </a>
         <span className="hidden sm:inline" aria-hidden>·</span>
         <a
