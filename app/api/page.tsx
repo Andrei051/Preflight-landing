@@ -152,13 +152,10 @@ export default function ApiReferencePage() {
               />
             </div>
           ) : (
-            <div className="border border-gray-200 rounded-lg p-8 bg-gray-50 text-center text-gray-600">
-              <p className="font-medium mb-2">Swagger UI will appear here</p>
+            <div className="border border-gray-200 rounded-lg p-8 bg-gray-50 text-center text-gray-600 max-w-2xl mx-auto">
+              <p className="font-medium mb-2">🚧 Interactive Swagger UI coming soon</p>
               <p className="text-sm">
-                Set <code className="bg-gray-200 px-1 rounded">NEXT_PUBLIC_SWAGGER_URL</code> in your environment to embed the API docs.
-              </p>
-              <p className="text-sm mt-2">
-                Example: <code className="bg-gray-200 px-1 rounded">https://api.preflightpayments.com/docs</code>
+                The API reference below will allow you to explore endpoints and run requests directly from the browser using your demo API key.
               </p>
             </div>
           )}
@@ -174,14 +171,14 @@ export default function ApiReferencePage() {
               <span className="text-2xl font-bold text-blue-600 shrink-0">1</span>
               <div>
                 <p className="font-semibold text-gray-900">Payment submitted</p>
-                <p className="text-sm text-gray-600"><code>status = PENDING</code></p>
+                <p className="text-sm text-gray-600">Status: PENDING</p>
               </div>
             </li>
             <li className="flex gap-4">
               <span className="text-2xl font-bold text-blue-600 shrink-0">2</span>
               <div>
                 <p className="font-semibold text-gray-900">Network reject arrives</p>
-                <p className="text-sm text-gray-600 mb-3"><code>status = REJECTED</code></p>
+                <p className="text-sm text-gray-600 mb-3">Status: REJECTED</p>
                 <p className="text-sm text-gray-700 mb-2">Preflight automatically:</p>
                 <ul className="list-disc pl-6 space-y-1 text-sm text-gray-700">
                   <li>opens investigation case</li>
@@ -261,7 +258,7 @@ export default function ApiReferencePage() {
               Request Access
             </a>
             <p className="text-sm text-blue-200">
-              Contact:{" "}
+              Prefer direct contact?{" "}
               <a href="mailto:demo@preflightpayments.com" className="text-white hover:underline">
                 demo@preflightpayments.com
               </a>
