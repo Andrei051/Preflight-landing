@@ -30,11 +30,7 @@ export default function FinalCTA() {
         </p>
         
         <div className="mt-12 pt-8 border-t border-blue-400/30">
-          <p className="text-blue-100 text-sm mb-6">
-            Status: MVP v0.1 - Ready for GTM demos with Swagger UI, deterministic data, and full case management UI
-          </p>
-          
-          <div className="bg-white/10 rounded-lg p-6 mt-6">
+          <div className="bg-white/10 rounded-lg p-6">
             <h3 className="text-xl font-semibold text-white mb-4">What you&apos;ll see in the demo</h3>
             <div className="grid md:grid-cols-3 gap-4 text-left">
               <div className="flex items-start gap-3">
