@@ -20,7 +20,7 @@ export default function Hero() {
             Supports cross-border SWIFT and SEPA (intra-EEA) payments.
             <br />
             <span className="text-base text-gray-400">
-              SWIFT and SEPA supported today. Domestic rails follow the same model and are on the roadmap.
+              SWIFT and SEPA supported today. Domestic rails follow the same model.
             </span>
           </p>
           

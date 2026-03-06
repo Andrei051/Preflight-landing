@@ -27,7 +27,7 @@ export default function ProductLoop() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-            Product Loop
+            How Preflight improves over time
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Your closed-loop system for payment success

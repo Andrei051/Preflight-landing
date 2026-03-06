@@ -1,10 +1,10 @@
 export default function WhoItsFor() {
   const personas = [
-    "Heads of Payments",
-    "Payment Product Managers",
-    "Ops & Investigations teams",
-    "Compliance & Risk",
-    "Payment infrastructure teams",
+    { title: "Heads of Payments", line: "Own KPIs and SLA targets across corridors" },
+    { title: "Payment Product Managers", line: "Ship features that reduce rejects and improve UX" },
+    { title: "Ops & Investigations teams", line: "Resolve failures faster with evidence and playbooks" },
+    { title: "Compliance & Risk", line: "Ensure validation coverage and maintain audit trails" },
+    { title: "Payment infrastructure teams", line: "Integrate into middleware and orchestration layers" },
   ];
 
   return (
@@ -26,7 +26,8 @@ export default function WhoItsFor() {
                 key={index}
                 className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow text-center"
               >
-                <p className="text-lg font-semibold text-gray-900">{persona}</p>
+                <p className="text-lg font-semibold text-gray-900">{persona.title}</p>
+                <p className="text-sm text-gray-600 mt-2">{persona.line}</p>
               </div>
             ))}
           </div>
