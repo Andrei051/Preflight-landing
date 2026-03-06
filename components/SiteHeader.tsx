@@ -7,7 +7,13 @@ export default function SiteHeader() {
         <Link href="/" className="text-lg font-semibold text-gray-900 hover:text-blue-600 transition-colors">
           Preflight
         </Link>
-        <nav>
+        <nav className="flex items-center gap-6">
+          <Link
+            href="/api"
+            className="text-sm text-gray-600 hover:text-blue-600 transition-colors"
+          >
+            API
+          </Link>
           <Link
             href="/reference"
             className="text-sm text-gray-600 hover:text-blue-600 transition-colors"

@@ -3,6 +3,7 @@ import type { MetadataRoute } from "next";
 const base = "https://preflightpayments.com";
 
 const referenceRoutes = [
+  "/api",
   "/reference",
   "/sepa/return-codes-overview",
   "/sepa/r01-insufficient-funds",

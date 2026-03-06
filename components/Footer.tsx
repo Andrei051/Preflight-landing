@@ -4,6 +4,10 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-sm text-gray-500">
         <span>© {new Date().getFullYear()} Preflight Payments</span>
         <span className="hidden sm:inline" aria-hidden>·</span>
+        <a href="/api" className="text-gray-600 hover:text-blue-600 transition-colors">
+          API
+        </a>
+        <span className="hidden sm:inline" aria-hidden>·</span>
         <a href="/reference" className="text-gray-600 hover:text-blue-600 transition-colors">
           Reference
         </a>
