@@ -33,9 +33,18 @@ export default function Hero() {
             >
               Request Access
             </a>
+            <a
+              href="/api"
+              className="px-8 py-4 bg-white text-blue-600 border-2 border-blue-600 rounded-lg font-semibold text-lg hover:bg-blue-50 transition-colors"
+            >
+              View API Reference
+            </a>
           </div>
           
           <p className="text-sm text-gray-500 mt-4">
+            Explore the API directly or request demo access.
+          </p>
+          <p className="text-sm text-gray-500 mt-1">
             ✅ No production access required for demo
           </p>
         </div>

@@ -39,33 +39,7 @@ export default function ApiReferencePage() {
         </div>
       </section>
 
-      {/* 2. API execution note */}
-      <section className="py-8 px-4 sm:px-6 lg:px-8 bg-amber-50 border-b border-amber-100">
-        <div className="max-w-3xl">
-          <h2 className="text-lg font-semibold text-gray-900 mb-2">Interactive execution</h2>
-          <p className="text-gray-700 mb-3">
-            Public API reference is available below. Interactive requests require a demo API key.
-          </p>
-          <ol className="list-decimal pl-6 space-y-1 text-gray-700 text-sm mb-3">
-            <li>Click <strong>Authorize</strong> in Swagger</li>
-            <li>Enter your demo API key</li>
-            <li>Use <strong>Try it out</strong> to run requests</li>
-          </ol>
-          <p className="text-sm">
-            Need a key?{" "}
-            <a
-              href={REQUEST_ACCESS_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:text-blue-800 font-medium underline"
-            >
-              Request access
-            </a>
-          </p>
-        </div>
-      </section>
-
-      {/* 3. Quick example */}
+      {/* 2. Quick example (moved up — developer-first) */}
       <section className="py-12 px-4 sm:px-6 lg:px-8 border-b border-gray-200">
         <div className="max-w-3xl">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Ingest payment outcome</h2>
@@ -92,7 +66,37 @@ export default function ApiReferencePage() {
               <li>Evidence timeline generated</li>
               <li>Failure reason classified</li>
             </ul>
+            <p className="text-gray-700 text-sm mt-3">
+              You can inspect the result via: <code className="bg-green-100 px-1 rounded">GET /api/payments/&#123;id&#125;/trace</code>
+            </p>
           </div>
+        </div>
+      </section>
+
+      {/* 3. API execution note */}
+      <section className="py-8 px-4 sm:px-6 lg:px-8 bg-amber-50 border-b border-amber-100">
+        <div className="max-w-3xl">
+          <h2 className="text-lg font-semibold text-gray-900 mb-2">Interactive execution</h2>
+          <p className="text-gray-700 mb-3">
+            Public API reference is available below.
+          </p>
+          <p className="text-gray-700 mb-2">To run requests:</p>
+          <ul className="list-disc pl-6 space-y-1 text-gray-700 text-sm mb-3">
+            <li>Click <strong>Authorize</strong></li>
+            <li>Enter your demo API key</li>
+            <li>Use <strong>Try it out</strong></li>
+          </ul>
+          <p className="text-sm">
+            Need a key?{" "}
+            <a
+              href={REQUEST_ACCESS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-800 font-medium underline"
+            >
+              Request access
+            </a>
+          </p>
         </div>
       </section>
 
@@ -207,9 +211,9 @@ export default function ApiReferencePage() {
             The API reference uses a deterministic demo dataset.
           </p>
           <ul className="list-disc pl-6 space-y-1 text-gray-700 text-sm">
-            <li>safe to experiment</li>
-            <li>no real payment data</li>
-            <li>environment resets periodically</li>
+            <li>Safe to experiment</li>
+            <li>No real payment data</li>
+            <li>Environment resets periodically</li>
           </ul>
           <p className="text-gray-600 mt-4">Perfect for exploring workflows.</p>
         </div>
@@ -230,7 +234,7 @@ export default function ApiReferencePage() {
             <li>orchestration layers</li>
           </ul>
           <p className="text-gray-700 font-medium">
-            Preflight does not execute payments. It observes execution events and builds an operational intelligence layer.
+            Preflight does not execute payments. It observes payment execution events and builds an operational investigation layer.
           </p>
         </div>
       </section>
