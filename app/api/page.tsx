@@ -4,7 +4,9 @@ import Link from "next/link";
 const REQUEST_ACCESS_URL =
   "https://docs.google.com/forms/d/e/1FAIpQLSdaObTJLdmOyLTBI0ePwCreO718PMdm3N9abM4Z6xclhoVaMg/viewform";
 
-const SWAGGER_URL = process.env.NEXT_PUBLIC_SWAGGER_URL || "";
+const PREFLIGHT_API_BASE =
+  process.env.NEXT_PUBLIC_PREFLIGHT_API_BASE_URL || "https://preflight-o4i5.onrender.com";
+const SWAGGER_URL = process.env.NEXT_PUBLIC_SWAGGER_URL || `${PREFLIGHT_API_BASE}/docs`;
 
 export const metadata: Metadata = {
   title: "Preflight API Reference | Preflight",
@@ -82,10 +84,14 @@ export default function ApiReferencePage() {
           </p>
           <p className="text-gray-700 mb-2">To run requests:</p>
           <ul className="list-disc pl-6 space-y-1 text-gray-700 text-sm mb-3">
-            <li>Click <strong>Authorize</strong></li>
-            <li>Enter your demo API key</li>
-            <li>Use <strong>Try it out</strong></li>
+            <li>Open the docs (link below or iframe), click <strong>Authorize</strong> (top right)</li>
+            <li>Enter your demo API key (no &quot;Bearer&quot; prefix)</li>
+            <li>Use <strong>Try it out</strong> on any endpoint; requests run against the live sandbox API</li>
           </ul>
+          <p className="text-gray-700 text-sm mb-3">
+            <strong>No key needed:</strong> <code className="bg-amber-100 px-1 rounded">/health</code>, <code className="bg-amber-100 px-1 rounded">/docs</code>.{" "}
+            <strong>Key required:</strong> all <code className="bg-amber-100 px-1 rounded">/api/*</code> endpoints (preflight, cases, telemetry, trace, etc.). Without a key you get 401 API key required.
+          </p>
           <p className="text-sm">
             Need a key?{" "}
             <a
@@ -140,25 +146,23 @@ export default function ApiReferencePage() {
       <section className="py-12 px-4 sm:px-6 lg:px-8 border-b border-gray-200">
         <div className="max-w-5xl">
           <h2 className="text-2xl font-bold text-gray-900 mb-2">API reference</h2>
-          <p className="text-sm text-gray-600 mb-6">
-            The OpenAPI specification below reflects the live API used in the demo environment.
+          <p className="text-sm text-gray-600 mb-2">
+            The OpenAPI specification below reflects the live API used in the demo environment; use your demo API key there.
           </p>
-          {SWAGGER_URL ? (
-            <div className="border border-gray-200 rounded-lg overflow-hidden">
-              <iframe
-                src={SWAGGER_URL}
-                title="Preflight API - Swagger UI"
-                className="w-full h-[800px] border-0"
-              />
-            </div>
-          ) : (
-            <div className="border border-gray-200 rounded-lg p-8 bg-gray-50 text-center text-gray-600 max-w-2xl mx-auto">
-              <p className="font-medium mb-2">🚧 Interactive Swagger UI coming soon</p>
-              <p className="text-sm">
-                The API reference below will allow you to explore endpoints and run requests directly from the browser using your demo API key.
-              </p>
-            </div>
-          )}
+          <p className="text-sm text-gray-600 mb-6">
+            Interactive API docs are available at{" "}
+            <a href={SWAGGER_URL} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium underline">
+              Preflight API Docs
+            </a>
+            . Use your demo API key in the Authorize dialog, then try endpoints directly from the browser.
+          </p>
+          <div className="border border-gray-200 rounded-lg overflow-hidden">
+            <iframe
+              src={SWAGGER_URL}
+              title="Preflight API - Swagger UI"
+              className="w-full h-[800px] border-0"
+            />
+          </div>
         </div>
       </section>
 
