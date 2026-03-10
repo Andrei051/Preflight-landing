@@ -142,27 +142,27 @@ export default function ApiReferencePage() {
         </div>
       </section>
 
-      {/* 5. Swagger UI */}
+      {/* 5. API docs (link only — CSP prevents embedding) */}
       <section className="py-12 px-4 sm:px-6 lg:px-8 border-b border-gray-200">
-        <div className="max-w-5xl">
-          <h2 className="text-2xl font-bold text-gray-900 mb-2">API reference</h2>
-          <p className="text-sm text-gray-600 mb-2">
-            The OpenAPI specification below reflects the live API used in the demo environment; use your demo API key there.
+        <div className="max-w-3xl">
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">Interactive API docs</h2>
+          <p className="text-gray-700 mb-4">
+            Open the live Preflight API docs in a new tab.
           </p>
           <p className="text-sm text-gray-600 mb-6">
-            Interactive API docs are available at{" "}
-            <a href={SWAGGER_URL} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium underline">
-              Preflight API Docs
-            </a>
-            . Use your demo API key in the Authorize dialog, then try endpoints directly from the browser.
+            The sandbox API may take a few seconds to wake on first load.
           </p>
-          <div className="border border-gray-200 rounded-lg overflow-hidden">
-            <iframe
-              src={SWAGGER_URL}
-              title="Preflight API - Swagger UI"
-              className="w-full h-[800px] border-0"
-            />
-          </div>
+          <a
+            href={SWAGGER_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+          >
+            Open API Docs
+          </a>
+          <p className="text-sm text-gray-500 mt-6">
+            Use your demo API key in the Authorize dialog, then try endpoints directly from the browser. The OpenAPI spec reflects the live demo environment.
+          </p>
         </div>
       </section>
 
