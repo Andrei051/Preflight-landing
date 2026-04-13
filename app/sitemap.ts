@@ -4,6 +4,7 @@ const base = "https://preflightpayments.com";
 
 const referenceRoutes = [
   "/api",
+  "/why-payments-fail",
   "/reference",
   "/sepa/return-codes-overview",
   "/sepa/r01-insufficient-funds",

@@ -24,6 +24,7 @@ export default function Pacs002StatusCodesPage() {
       lede="pacs.002 carries payment status information in ISO 20022 flows. Status codes indicate acceptance, completion, rejection, or pending; ACSP is not final settlement."
       lastUpdated="2026-02-25"
       canonicalPath="/iso20022/pacs002-status-codes"
+      preflightApiCta={{ ctaLabel: "Simulate this scenario with Preflight →" }}
       sections={[
         {
           id: "what-it-means",

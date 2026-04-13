@@ -1,6 +1,9 @@
 export default function ReferenceFooter() {
   return (
     <div className="mt-12 pt-8 border-t border-gray-200 bg-gray-50 -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 py-6 rounded-lg">
+      <p className="text-sm font-medium text-gray-900 mb-2">
+        Preflight is a pre-execution and post-execution control layer for payments.
+      </p>
       <p className="text-sm text-gray-700 mb-3">
         Preflight models these scenarios deterministically before and after execution.
       </p>

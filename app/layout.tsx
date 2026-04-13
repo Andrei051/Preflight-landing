@@ -4,8 +4,9 @@ import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://preflightpayments.com"),
-  title: "Preflight - Payment Risk & Compliance Engine",
-  description: "Pre-execution risk and compliance engine for payments. Validate payments before execution and investigate failures with full evidence.",
+  title: "Why payments fail after execution (SWIFT, SEPA, returns) | Preflight",
+  description:
+    "Understand why payments get rejected, returned, or stuck across SWIFT and SEPA. Detect failures before execution with Preflight.",
   icons: {
     icon: "/icon.svg",
   },
@@ -16,10 +17,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     siteName: "Preflight",
+    title: "Why payments fail after execution (SWIFT, SEPA, returns) | Preflight",
+    description:
+      "Understand why payments get rejected, returned, or stuck across SWIFT and SEPA. Detect failures before execution with Preflight.",
     type: "website",
   },
   twitter: {
     card: "summary",
+    title: "Why payments fail after execution (SWIFT, SEPA, returns) | Preflight",
+    description:
+      "Understand why payments get rejected, returned, or stuck across SWIFT and SEPA. Detect failures before execution with Preflight.",
   },
 };
 

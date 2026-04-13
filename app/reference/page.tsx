@@ -10,6 +10,12 @@ export const metadata: Metadata = {
 
 const startHereCards = [
   {
+    title: "Why payments fail (routing hub)",
+    href: "/why-payments-fail",
+    description:
+      "Mid-intent hub: SWIFT failures, SEPA returns, stuck payments — links into detailed reference.",
+  },
+  {
     title: "SEPA rejects & returns",
     href: "/sepa/return-codes-overview",
     description: "Return reason codes (R01, R02, R03…) with table summary and links to detailed pages.",

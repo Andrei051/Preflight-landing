@@ -24,6 +24,7 @@ export default function SwiftNackFormatErrorPage() {
       lede="A NACK indicates that the SWIFT message was rejected at the network or format level before business processing. Format errors prevent the message from being accepted by the network or the next hop."
       lastUpdated="2026-02-25"
       canonicalPath="/swift/nack-format-error"
+      preflightApiCta
       sections={[
         {
           id: "what-it-means",

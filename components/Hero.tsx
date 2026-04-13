@@ -9,7 +9,9 @@ export default function Hero() {
               international payments
             </span>
           </h1>
-          
+          <p className="text-lg sm:text-xl text-gray-800 font-medium mb-4 max-w-2xl mx-auto leading-snug">
+            Preflight is a pre-execution and post-execution control layer for payments.
+          </p>
           <p className="text-xl sm:text-2xl text-gray-600 mb-4 leading-relaxed">
             Reduce SWIFT & SEPA payment rejects.
             <br />

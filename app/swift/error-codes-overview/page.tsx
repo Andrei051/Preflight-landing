@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ReferenceSection from "@/components/reference/ReferenceSection";
 import ReferenceFooter from "@/components/reference/ReferenceFooter";
+import ReferencePreflightApiCta from "@/components/reference/ReferencePreflightApiCta";
 import BreadcrumbListJsonLd from "@/components/reference/BreadcrumbListJsonLd";
 
 export const metadata: Metadata = {
@@ -91,6 +92,11 @@ export default function SwiftErrorCodesOverviewPage() {
             <p><strong>Scope:</strong> {SCOPE_NOTE}</p>
           </div>
         </header>
+
+        <ReferencePreflightApiCta
+          headline="See how this is detected before execution"
+          ctaLabel="Simulate SWIFT failure scenarios with Preflight →"
+        />
 
         <ReferenceSection id="table" heading="Error categories at a glance">
           <div className="overflow-x-auto">

@@ -3,6 +3,7 @@ import ReferenceSection from "./ReferenceSection";
 import RelatedLinks, { type RelatedLink } from "./RelatedLinks";
 import ReferenceFooter from "./ReferenceFooter";
 import BreadcrumbListJsonLd from "./BreadcrumbListJsonLd";
+import ReferencePreflightApiCta from "./ReferencePreflightApiCta";
 
 export interface ReferenceSectionProps {
   id: string;
@@ -30,6 +31,8 @@ export interface ReferencePageProps {
   scopeNote?: string;
   /** Current page path for BreadcrumbList JSON-LD (e.g. /sepa/r01-insufficient-funds). */
   canonicalPath?: string;
+  /** Product CTA block linking to /api (operator → system bridge). */
+  preflightApiCta?: boolean | { headline?: string; ctaLabel?: string };
 }
 
 export default function ReferencePage({
@@ -43,6 +46,7 @@ export default function ReferencePage({
   lastUpdated,
   scopeNote = DEFAULT_SCOPE_NOTE,
   canonicalPath,
+  preflightApiCta,
 }: ReferencePageProps) {
   return (
     <article className="min-h-screen bg-white">
@@ -82,6 +86,12 @@ export default function ReferencePage({
             </div>
           )}
         </header>
+
+        {preflightApiCta && (
+          <ReferencePreflightApiCta
+            {...(typeof preflightApiCta === "object" ? preflightApiCta : {})}
+          />
+        )}
 
         {sections.map((s) => (
           <ReferenceSection key={s.id} id={s.id} heading={s.heading}>
