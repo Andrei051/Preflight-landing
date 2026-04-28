@@ -3,9 +3,9 @@ import ReferencePage from "@/components/reference/ReferencePage";
 import FaqJsonLd from "@/components/reference/FaqJsonLd";
 
 export const metadata: Metadata = {
-  title: "SWIFT NACK – Format Error (Causes & Triage) | Preflight Reference",
+  title: "SWIFT NACK (Format Error) – Causes & Triage | Preflight Reference",
   description:
-    "What SWIFT NACK format errors mean, typical causes (invalid BIC, missing field 59), and why pre-validation matters.",
+    "SWIFT NACK (Negative Acknowledgement) indicates message rejection at network or format validation. Learn common SWIFT NACK format errors, causes, and prevention.",
 };
 
 const nackFaq = [
@@ -20,8 +20,8 @@ export default function SwiftNackFormatErrorPage() {
     <>
       <FaqJsonLd items={nackFaq} />
       <ReferencePage
-      title="SWIFT NACK – Format Error"
-      lede="A NACK indicates that the SWIFT message was rejected at the network or format level before business processing. Format errors prevent the message from being accepted by the network or the next hop."
+      title="SWIFT NACK (Format Error)"
+      lede="SWIFT NACK (Negative Acknowledgement) indicates that a message was rejected at the network or format validation stage. This page explains common SWIFT NACK format errors, causes, and how to prevent them."
       lastUpdated="2026-02-25"
       canonicalPath="/swift/nack-format-error"
       preflightApiCta

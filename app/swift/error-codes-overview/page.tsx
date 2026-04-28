@@ -87,6 +87,13 @@ export default function SwiftErrorCodesOverviewPage() {
           <p className="text-lg text-gray-600 leading-relaxed">
             SWIFT error scenarios fall into three broad categories: network-level format rejections (NACK), routing and intermediary failures, and business-level rejects such as funds, compliance, or account issues. This overview provides a structured reference and links to detailed pages where available.
           </p>
+          <p className="mt-3 text-base text-gray-700">
+            Start with{" "}
+            <Link href="/swift/nack-format-error" className="text-blue-600 hover:text-blue-800 hover:underline font-medium">
+              SWIFT NACK (format error)
+            </Link>{" "}
+            for the canonical network-format rejection reference.
+          </p>
           <div className="mt-4 text-sm text-gray-500 space-y-1">
             <p>Last updated: 2026-02-25</p>
             <p><strong>Scope:</strong> {SCOPE_NOTE}</p>
