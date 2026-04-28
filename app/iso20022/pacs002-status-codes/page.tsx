@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "pacs.002 Status Codes (ACSP, ACSC, RJCT, PDNG) | Preflight Reference",
   description:
     "Technical breakdown of pacs.002 status codes: ACSP, ACSC, RJCT, PDNG and their operational meaning and timing.",
+  alternates: {
+    canonical: "/iso20022/pacs002-status-codes",
+  },
 };
 
 const pacs002Faq = [

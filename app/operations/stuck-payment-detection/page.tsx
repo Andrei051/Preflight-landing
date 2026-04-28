@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Stuck Payment Detection (Absence-of-Event, SLA Thresholds) | Preflight Reference",
   description:
     "Absence-of-event detection, SLA breach thresholds, pacs.002 timing expectations, and operational triage for stuck payments.",
+  alternates: {
+    canonical: "/operations/stuck-payment-detection",
+  },
 };
 
 const stuckFaq = [

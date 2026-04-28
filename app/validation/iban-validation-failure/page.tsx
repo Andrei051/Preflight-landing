@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "IBAN Validation Failure (Checksum, Scheme, Triage) | Preflight Reference",
   description:
     "Checksum vs scheme acceptance: why a valid MOD97 IBAN can still lead to rejection (BIC mismatch, closed account, format constraints).",
+  alternates: {
+    canonical: "/validation/iban-validation-failure",
+  },
 };
 
 export default function IbanValidationFailurePage() {

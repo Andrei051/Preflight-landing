@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Reference | Preflight",
   description:
     "Operator-grade reference for payment failure codes, status flows, validation, operations, and playbooks. SEPA, SWIFT, ISO 20022.",
+  alternates: {
+    canonical: "/reference",
+  },
 };
 
 const startHereCards = [

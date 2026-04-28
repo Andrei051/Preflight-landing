@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: "Why payments fail (SWIFT, SEPA, stuck payments) | Preflight",
   description:
     "Operator routing hub: rejected SWIFT messages, SEPA returns, stuck or SLA-breached payments — with links to detailed reference.",
+  alternates: {
+    canonical: "/why-payments-fail",
+  },
 };
 
 const breadcrumbs = [

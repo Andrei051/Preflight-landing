@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "SWIFT Intermediary Routing Failure (Field 56/57, Triage) | Preflight Reference",
   description:
     "SWIFT intermediary and correspondent routing issues: field 56/57, nostro alignment, and operational impact.",
+  alternates: {
+    canonical: "/swift/intermediary-routing-failure",
+  },
 };
 
 export default function IntermediaryRoutingFailurePage() {

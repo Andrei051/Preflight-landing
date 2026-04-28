@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "SLA Breach Monitoring for Payments (Settlement, Alerts) | Preflight Reference",
   description:
     "Settlement SLA by rail, event-driven monitoring, alert thresholds, and escalation for payment SLA breach detection.",
+  alternates: {
+    canonical: "/operations/payment-sla-breach-monitoring",
+  },
 };
 
 export default function PaymentSlaBreachMonitoringPage() {

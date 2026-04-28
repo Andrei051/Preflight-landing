@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "SEPA R01 – Insufficient Funds (Meaning, Lifecycle, Prevention) | Preflight Reference",
   description:
     "What SEPA return code R01 (insufficient funds) means, when it occurs in the payment lifecycle, operational impact, and how to detect and prevent it.",
+  alternates: {
+    canonical: "/sepa/r01-insufficient-funds",
+  },
 };
 
 const r01Faq = [

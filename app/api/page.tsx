@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Preflight API Reference | Preflight",
   description:
     "Investigate payment failures and automate operational workflows for SWIFT and SEPA payments. Ingest outcomes, trace payments, and analyze corridor intelligence.",
+  alternates: {
+    canonical: "/api",
+  },
 };
 
 export default function ApiReferencePage() {

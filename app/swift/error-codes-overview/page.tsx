@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "SWIFT Error Codes Overview (NACK, Routing, Business Rejects) | Preflight Reference",
   description:
     "Overview of common SWIFT error scenarios including network NACKs, format errors, intermediary routing failures, and business-level rejects. Includes lifecycle context and links to detailed references.",
+  alternates: {
+    canonical: "/swift/error-codes-overview",
+  },
 };
 
 const SCOPE_NOTE =

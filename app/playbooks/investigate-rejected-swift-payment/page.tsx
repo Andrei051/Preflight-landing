@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Investigate Rejected SWIFT Payment (Trace, Evidence) | Preflight Reference",
   description:
     "Step-by-step trace reconstruction, network vs correspondent vs beneficiary rejection, and evidence pack elements.",
+  alternates: {
+    canonical: "/playbooks/investigate-rejected-swift-payment",
+  },
 };
 
 export default function InvestigateRejectedSwiftPaymentPage() {

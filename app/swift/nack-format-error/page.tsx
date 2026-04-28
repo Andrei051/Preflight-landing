@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "SWIFT NACK (Format Error) – Causes & Triage | Preflight Reference",
   description:
     "SWIFT NACK (Negative Acknowledgement) indicates message rejection at network or format validation. Learn common SWIFT NACK format errors, causes, and prevention.",
+  alternates: {
+    canonical: "/swift/nack-format-error",
+  },
 };
 
 const nackFaq = [

@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "SEPA R02 – Account Closed (Meaning, Lifecycle, Prevention) | Preflight Reference",
   description:
     "What SEPA return code R02 (account closed) means, when it occurs, and how it affects recurring and one-off payments.",
+  alternates: {
+    canonical: "/sepa/r02-account-closed",
+  },
 };
 
 export default function R02AccountClosedPage() {

@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "SEPA Return Codes Overview (R01, R02, R03…) | Preflight Reference",
   description:
     "Overview of SEPA direct debit and credit transfer return reason codes: R01 insufficient funds, R02 account closed, and other common codes. Operational reference with links to detailed pages.",
+  alternates: {
+    canonical: "/sepa/return-codes-overview",
+  },
 };
 
 const SCOPE_NOTE =

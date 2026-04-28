@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Cut-Off Time Failure – Cross-Border (Submission, Value Date, SLA) | Preflight Reference",
   description:
     "Submission vs value cutoff, FX timing, liquidity timing, and SLA breach risk in cross-border payments.",
+  alternates: {
+    canonical: "/operations/cutoff-failure-cross-border",
+  },
 };
 
 export default function CutoffFailureCrossBorderPage() {

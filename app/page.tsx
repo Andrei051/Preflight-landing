@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Hero from "@/components/Hero";
 import Problem from "@/components/Problem";
 import Solution from "@/components/Solution";
@@ -6,6 +7,12 @@ import IntegrationModel from "@/components/IntegrationModel";
 import WhoItsFor from "@/components/WhoItsFor";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default function Home() {
   return (
