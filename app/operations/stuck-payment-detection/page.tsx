@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ReferencePage from "@/components/reference/ReferencePage";
 import FaqJsonLd from "@/components/reference/FaqJsonLd";
+import { StuckTimelineDiagram } from "@/components/reference/lifecycle";
 
 export const metadata: Metadata = {
   title: "Stuck Payment Detection (Absence-of-Event, SLA Thresholds) | Preflight Reference",
@@ -38,6 +39,22 @@ export default function StuckPaymentDetectionPage() {
           ),
         },
         {
+          id: "timeline",
+          heading: "Stuck signal (timeline)",
+          body: (
+            <>
+              <StuckTimelineDiagram />
+              <p className="mt-4 text-sm text-gray-600">
+                Hub:{" "}
+                <a href="/why-payments-get-stuck" className="text-blue-600 hover:underline">
+                  why payments get stuck
+                </a>
+                .
+              </p>
+            </>
+          ),
+        },
+        {
           id: "when-it-occurs",
           heading: "When to trigger detection",
           body: (
@@ -70,6 +87,8 @@ export default function StuckPaymentDetectionPage() {
         },
       ]}
       related={[
+        { href: "/why-payments-get-stuck", label: "Why payments get stuck", kind: "operations" },
+        { href: "/payment-reject-vs-return-vs-pending", label: "Reject vs return vs pending", kind: "operations" },
         { href: "/iso20022/pacs002-status-codes", label: "pacs.002 status codes", kind: "scheme" },
         { href: "/operations/payment-sla-breach-monitoring", label: "SLA breach monitoring", kind: "operations" },
         { href: "/playbooks/investigate-rejected-swift-payment", label: "Investigate a rejected SWIFT payment", kind: "playbook" },

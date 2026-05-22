@@ -13,6 +13,18 @@ export const metadata: Metadata = {
 
 const startHereCards = [
   {
+    title: "Reject vs return vs pending",
+    href: "/payment-reject-vs-return-vs-pending",
+    description:
+      "Cross-rail outcomes: when a payment is rejected, returned, still pending, or settled — with lifecycle diagram.",
+  },
+  {
+    title: "Why payments get stuck",
+    href: "/why-payments-get-stuck",
+    description:
+      "State divergence, missing status events, cutoffs, and SLA — pain narrative with investigation flow.",
+  },
+  {
     title: "Why payments fail (routing hub)",
     href: "/why-payments-fail",
     description:

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ReferencePage from "@/components/reference/ReferencePage";
 import FaqJsonLd from "@/components/reference/FaqJsonLd";
+import { Pacs002FlowDiagram } from "@/components/reference/lifecycle";
 
 export const metadata: Metadata = {
   title: "pacs.002 Status Codes (ACSP, ACSC, RJCT, PDNG) | Preflight Reference",
@@ -39,6 +40,26 @@ export default function Pacs002StatusCodesPage() {
           ),
         },
         {
+          id: "lifecycle",
+          heading: "Status progression",
+          body: (
+            <>
+              <Pacs002FlowDiagram />
+              <p className="mt-4 text-sm text-gray-600">
+                See also{" "}
+                <a href="/payment-reject-vs-return-vs-pending" className="text-blue-600 hover:underline">
+                  reject vs return vs pending
+                </a>{" "}
+                and{" "}
+                <a href="/why-payments-get-stuck" className="text-blue-600 hover:underline">
+                  why payments get stuck
+                </a>
+                .
+              </p>
+            </>
+          ),
+        },
+        {
           id: "when-it-occurs",
           heading: "Timing and operational meaning",
           body: (
@@ -71,7 +92,8 @@ export default function Pacs002StatusCodesPage() {
         },
       ]}
       related={[
-        { href: "/sepa/r01-insufficient-funds", label: "SEPA R01 – Insufficient Funds", kind: "scheme" },
+        { href: "/payment-reject-vs-return-vs-pending", label: "Reject vs return vs pending", kind: "operations" },
+        { href: "/why-payments-get-stuck", label: "Why payments get stuck", kind: "operations" },
         { href: "/operations/stuck-payment-detection", label: "Stuck payment detection", kind: "operations" },
         { href: "/playbooks/investigate-rejected-swift-payment", label: "Investigate a rejected SWIFT payment", kind: "playbook" },
       ]}

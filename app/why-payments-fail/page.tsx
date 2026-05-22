@@ -45,6 +45,27 @@ export default function WhyPaymentsFailPage() {
           </p>
         </header>
 
+        <section className="mb-10 p-4 border border-gray-200 rounded-lg bg-gray-50/50">
+          <h2 className="text-sm font-semibold text-gray-900 mb-2">Start with outcome clarity</h2>
+          <ul className="space-y-2 text-gray-700 text-sm">
+            <li>
+              <Link
+                href="/payment-reject-vs-return-vs-pending"
+                className="text-blue-600 hover:underline font-medium"
+              >
+                Reject vs return vs pending
+              </Link>
+              — cross-rail definitions and triage order
+            </li>
+            <li>
+              <Link href="/why-payments-get-stuck" className="text-blue-600 hover:underline font-medium">
+                Why payments get stuck
+              </Link>
+              — delayed, pending, and SLA breach patterns
+            </li>
+          </ul>
+        </section>
+
         <section className="mb-10">
           <h2 className="text-xl font-semibold text-gray-900 mb-3">SWIFT failures</h2>
           <p className="text-gray-700 mb-3">
